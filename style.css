@@ -1,24 +1,35 @@
-main {
-  display: relative;
+body {
   width: 100%;
   height: 100%;
 }
+main {
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.5rem;
+  line-height: 2;
+  text-align: center; /* Added to remove default margin */
+}
+
 section.hero {
   display: flex;
   flex-direction: row;
-  width: 75%;
-  max-height: 50%;
+  width: 100%;
+  background-color: pink;
 }
-
 .hero-container-1 {
-  max-width: 25%;
+  width: 60%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .hero-container-2 {
-  max-width: 75;
+  width: 30%;
+  object-fit: cover;
+  padding: 2rem;
 }
-main.aside {
-  display: flex;
-  flex-direction: row;
-  max-height: 100%;
-  max-width: 25%;
+img {
+  border-radius: 10px;
 }
