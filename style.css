@@ -1,3 +1,23 @@
 main {
+  display: relative;
+  width: 100%;
+  height: 100%;
+}
+section.hero {
   display: flex;
+  flex-direction: row;
+  width: 75%;
+  max-height: 50%;
+}
+
+.hero-container-1 {
+  max-width: 25%;
+}
+.hero-container-2 {
+  max-width: 75;
+}
+main.aside {
+  width: 25%;
+  max-height: 100%;
+  display: absolute;
 }
