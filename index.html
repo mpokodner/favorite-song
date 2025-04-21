@@ -3,19 +3,421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album Tribute Page</title>
     <link rel="stylesheet" href="style.css" />
-    <title>My Favorite Song</title>
+    <!-- Link to your external CSS file here -->
+    <!-- <link rel="stylesheet" href="your-stylesheet.css"> -->
   </head>
   <body>
-    <main>
-      <h1>Time of Your Life</h1>
-      <section class="hero">
-        <div class="hero-container-1">
-          <img src="skyshine.jpg" alt="sunshine over the hills" />
+    <div class="container">
+      <header>
+        <h1>Album Title</h1>
+        <h2>Artist Name</h2>
+      </header>
+
+      <div class="album-info">
+        <div class="album-cover"></div>
+        <div class="album-details">
+          <h2>Released: 2025</h2>
+          <p>A groundbreaking album that changed music forever</p>
         </div>
-        <div class="hero-container-2">aside with lyrics</div>
-      </section>
-      <section class="testimonails">Pictures or visuals here</section>
-    </main>
+      </div>
+
+      <div class="theme-sections">
+        <div class="theme-card animate-element">
+          <h3>Lyrical Themes</h3>
+          <p>
+            This album explores themes of personal growth, resilience, and
+            finding beauty in everyday moments. The lyrics often weave
+            narratives of overcoming adversity while maintaining hope for a
+            better tomorrow.
+          </p>
+        </div>
+        <div class="theme-card animate-element">
+          <h3>Musical Style</h3>
+          <p>
+            Blending elements of folk, rock, and electronic music, this album
+            creates a unique sonic landscape that feels both nostalgic and
+            forward-thinking. The arrangements are intricate yet accessible.
+          </p>
+        </div>
+      </div>
+
+      <div class="music-player">
+        <h3>Listen to Featured Track</h3>
+        <input type="range" class="time-slider" min="0" max="100" value="0" />
+        <div class="player-time">
+          <span>0:00</span>
+          <span>3:45</span>
+        </div>
+        <div class="player-controls">
+          <button class="play-btn">▶</button>
+        </div>
+      </div>
+
+      <div class="visual-timeline">
+        <h2>Album Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item left animate-element">
+            <div class="timeline-content">
+              <h3>Inspiration</h3>
+              <p>
+                The album's concept was born during a retreat in the mountains,
+                where the artist found clarity and creative renewal.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right animate-element">
+            <div class="timeline-content">
+              <h3>Composition</h3>
+              <p>
+                Over six intense months, the songs took shape in a small studio
+                overlooking the ocean.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item left animate-element">
+            <div class="timeline-content">
+              <h3>Recording</h3>
+              <p>
+                The album was recorded in an analog studio, capturing the warmth
+                and authenticity of live performances.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right animate-element">
+            <div class="timeline-content">
+              <h3>Release</h3>
+              <p>
+                The album debuted to critical acclaim, immediately resonating
+                with fans worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-gallery">
+        <div class="gallery-image">
+          <img src="/api/placeholder/400/300" alt="Album artwork" />
+          <div class="gallery-caption">Original concept art</div>
+        </div>
+        <div class="gallery-image">
+          <img src="/api/placeholder/400/300" alt="Studio session" />
+          <div class="gallery-caption">Recording session</div>
+        </div>
+        <div class="gallery-image">
+          <img src="/api/placeholder/400/300" alt="Live performance" />
+          <div class="gallery-caption">First live performance</div>
+        </div>
+        <div class="gallery-image">
+          <img src="/api/placeholder/400/300" alt="Behind the scenes" />
+          <div class="gallery-caption">Behind the scenes</div>
+        </div>
+      </div>
+
+      <div class="quote-section">
+        <div class="guitar-strings">
+          <div class="string" style="top: 20%"></div>
+          <div class="string" style="top: 40%"></div>
+          <div class="string" style="top: 60%"></div>
+          <div class="string" style="top: 80%"></div>
+        </div>
+        <p class="quote">
+          "Music gives a soul to the universe, wings to the mind, flight to the
+          imagination, and life to everything."
+        </p>
+      </div>
+
+      <div class="photo-journey">
+        <div class="journey-slider">
+          <div class="journey-slide">
+            <img
+              class="journey-image"
+              src="/api/placeholder/1200/400"
+              alt="Journey image 1"
+            />
+            <div class="journey-caption">The beginning of the journey</div>
+          </div>
+          <div class="journey-slide">
+            <img
+              class="journey-image"
+              src="/api/placeholder/1200/400"
+              alt="Journey image 2"
+            />
+            <div class="journey-caption">Finding inspiration</div>
+          </div>
+          <div class="journey-slide">
+            <img
+              class="journey-image"
+              src="/api/placeholder/1200/400"
+              alt="Journey image 3"
+            />
+            <div class="journey-caption">Creating the sound</div>
+          </div>
+        </div>
+        <div class="journey-navigation">
+          <div class="journey-nav-dot active"></div>
+          <div class="journey-nav-dot"></div>
+          <div class="journey-nav-dot"></div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+        <div class="parallax-layer layer-3"></div>
+        <div class="parallax-content">
+          <h2>An Immersive Experience</h2>
+          <p>This album takes you on a journey through sound and emotion</p>
+        </div>
+      </div>
+
+      <div class="meaning-section">
+        <h2>Exploring Deeper Meanings</h2>
+        <div class="meaning-tabs">
+          <button class="tab-button active">Track 1</button>
+          <button class="tab-button">Track 2</button>
+          <button class="tab-button">Track 3</button>
+          <button class="tab-button">Track 4</button>
+        </div>
+        <div class="tab-content active">
+          <h3>Track 1: New Beginnings</h3>
+          <p>
+            This song represents the start of a journey, with hopeful melodies
+            and forward-looking lyrics. The subtle chord progressions mirror the
+            tentative first steps into unknown territory.
+          </p>
+        </div>
+        <div class="tab-content">
+          <h3>Track 2: The Climb</h3>
+          <p>
+            Building on the energy established in the opening track, this song
+            tackles the challenges faced when pursuing a dream. The dynamic
+            shifts in rhythm represent the ups and downs of the journey.
+          </p>
+        </div>
+        <div class="tab-content">
+          <h3>Track 3: Reflection</h3>
+          <p>
+            A more introspective piece that creates space for contemplation. The
+            sparse arrangement allows the lyrics to take center stage as they
+            explore themes of self-discovery.
+          </p>
+        </div>
+        <div class="tab-content">
+          <h3>Track 4: Arrival</h3>
+          <p>
+            The culmination of the album's narrative arc, this triumphant finale
+            celebrates growth and achievement while acknowledging that every
+            arrival is also a new beginning.
+          </p>
+        </div>
+      </div>
+
+      <div class="interactive-guitar">
+        <canvas class="guitar-canvas"></canvas>
+      </div>
+
+      <div class="theme-explorer">
+        <h2>Explore the Album's Themes</h2>
+        <input
+          type="range"
+          class="explorer-slider"
+          min="0"
+          max="4"
+          value="0"
+          step="1"
+        />
+        <div class="theme-display">
+          <h3 class="theme-title">Personal Growth</h3>
+          <p class="theme-description">
+            The album charts a course of personal evolution, from moments of
+            doubt to newfound confidence and wisdom.
+          </p>
+        </div>
+      </div>
+
+      <div class="chord-diagram">
+        <div class="chord">
+          <div class="chord-name">C Major</div>
+          <svg class="chord-diagram-svg">
+            <!-- SVG chord diagram would go here -->
+            <rect
+              class="fretboard"
+              x="10"
+              y="10"
+              width="80"
+              height="100"
+            ></rect>
+            <!-- Strings -->
+            <line class="guitar-string" x1="10" y1="20" x2="90" y2="20"></line>
+            <line class="guitar-string" x1="10" y1="40" x2="90" y2="40"></line>
+            <line class="guitar-string" x1="10" y1="60" x2="90" y2="60"></line>
+            <line class="guitar-string" x1="10" y1="80" x2="90" y2="80"></line>
+            <line
+              class="guitar-string"
+              x1="10"
+              y1="100"
+              x2="90"
+              y2="100"
+            ></line>
+            <!-- Finger positions -->
+            <circle class="finger-position" cx="30" cy="60"></circle>
+            <circle class="finger-position" cx="30" cy="100"></circle>
+          </svg>
+        </div>
+        <div class="chord">
+          <div class="chord-name">G Major</div>
+          <svg class="chord-diagram-svg">
+            <!-- SVG chord diagram would go here -->
+            <rect
+              class="fretboard"
+              x="10"
+              y="10"
+              width="80"
+              height="100"
+            ></rect>
+            <!-- Strings -->
+            <line class="guitar-string" x1="10" y1="20" x2="90" y2="20"></line>
+            <line class="guitar-string" x1="10" y1="40" x2="90" y2="40"></line>
+            <line class="guitar-string" x1="10" y1="60" x2="90" y2="60"></line>
+            <line class="guitar-string" x1="10" y1="80" x2="90" y2="80"></line>
+            <line
+              class="guitar-string"
+              x1="10"
+              y1="100"
+              x2="90"
+              y2="100"
+            ></line>
+            <!-- Finger positions -->
+            <circle class="finger-position" cx="30" cy="20"></circle>
+            <circle class="finger-position" cx="50" cy="40"></circle>
+            <circle class="finger-position" cx="50" cy="80"></circle>
+          </svg>
+        </div>
+        <div class="chord">
+          <div class="chord-name">D Minor</div>
+          <svg class="chord-diagram-svg">
+            <!-- SVG chord diagram would go here -->
+            <rect
+              class="fretboard"
+              x="10"
+              y="10"
+              width="80"
+              height="100"
+            ></rect>
+            <!-- Strings -->
+            <line class="guitar-string" x1="10" y1="20" x2="90" y2="20"></line>
+            <line class="guitar-string" x1="10" y1="40" x2="90" y2="40"></line>
+            <line class="guitar-string" x1="10" y1="60" x2="90" y2="60"></line>
+            <line class="guitar-string" x1="10" y1="80" x2="90" y2="80"></line>
+            <line
+              class="guitar-string"
+              x1="10"
+              y1="100"
+              x2="90"
+              y2="100"
+            ></line>
+            <!-- Finger positions -->
+            <circle class="finger-position" cx="30" cy="40"></circle>
+            <circle class="finger-position" cx="50" cy="60"></circle>
+            <circle class="finger-position" cx="30" cy="80"></circle>
+          </svg>
+        </div>
+      </div>
+
+      <div class="memory-section">
+        <h2>Share Your Memories</h2>
+        <p>How has this album impacted your life? Share your story below.</p>
+        <div class="memory-form">
+          <textarea
+            class="memory-input"
+            placeholder="Share your story..."
+            rows="4"
+          ></textarea>
+          <input type="text" class="memory-name" placeholder="Your name" />
+          <button class="memory-submit">Share Memory</button>
+        </div>
+        <div class="memory-wall">
+          <div class="memory-card">
+            <p class="memory-text">
+              "This album got me through one of the toughest times of my life.
+              I'll forever be grateful for these songs."
+            </p>
+            <p class="memory-author">- Alex</p>
+          </div>
+          <div class="memory-card">
+            <p class="memory-text">
+              "I played this album on my road trip across the country. Now
+              whenever I hear it, I'm transported back to those wide open roads
+              and endless skies."
+            </p>
+            <p class="memory-author">- Jamie</p>
+          </div>
+          <div class="memory-card">
+            <p class="memory-text">
+              "The third track was the first dance at my wedding. These songs
+              are woven into the fabric of my life now."
+            </p>
+            <p class="memory-author">- Morgan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="key-elements">
+        <h2>Key Musical Elements</h2>
+        <div class="element-grid">
+          <div class="element-card">
+            <div class="element-icon">♪</div>
+            <h3 class="element-title">Melody</h3>
+            <p class="element-description">
+              Soaring vocal lines that evoke emotional responses and create
+              memorable hooks.
+            </p>
+          </div>
+          <div class="element-card">
+            <div class="element-icon">♫</div>
+            <h3 class="element-title">Harmony</h3>
+            <p class="element-description">
+              Rich chord progressions that create tension and resolution
+              throughout the album.
+            </p>
+          </div>
+          <div class="element-card">
+            <div class="element-icon">⏱</div>
+            <h3 class="element-title">Rhythm</h3>
+            <p class="element-description">
+              Dynamic patterns that drive the songs forward and create
+              distinctive grooves.
+            </p>
+          </div>
+          <div class="element-card">
+            <div class="element-icon">🎸</div>
+            <h3 class="element-title">Instrumentation</h3>
+            <p class="element-description">
+              A blend of acoustic and electronic elements creating a unique
+              sonic palette.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">↑</div>
+    <script src="index.js"></script>
+
+    <footer>
+      <p>© 2025 Album Tribute | Created with passion by music lovers</p>
+    </footer>
+
+    <!-- Add falling leaves animation elements -->
+    <div class="falling-leaf" style="left: 10%; animation-delay: 0s"></div>
+    <div class="falling-leaf" style="left: 20%; animation-delay: 2s"></div>
+    <div class="falling-leaf" style="left: 35%; animation-delay: 3.5s"></div>
+    <div class="falling-leaf" style="left: 50%; animation-delay: 1s"></div>
+    <div class="falling-leaf" style="left: 65%; animation-delay: 4.5s"></div>
+    <div class="falling-leaf" style="left: 80%; animation-delay: 2.5s"></div>
+    <div class="falling-leaf" style="left: 90%; animation-delay: 3s"></div>
   </body>
 </html>
