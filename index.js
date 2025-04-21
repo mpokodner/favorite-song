@@ -37,22 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Parallax effect
-  document.addEventListener("mousemove", (e) => {
-    const layers = document.querySelectorAll(".parallax-layer");
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-    const deltaX = e.clientX - centerX;
-    const deltaY = e.clientY - centerY;
-
-    layers.forEach((layer, index) => {
-      const speed = (index + 1) * 0.01;
-      const x = deltaX * speed;
-      const y = deltaY * speed;
-      layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    });
-  });
-
   // Scroll indicator functionality
   const scrollIndicator = document.querySelector(".scroll-indicator");
   if (scrollIndicator) {
